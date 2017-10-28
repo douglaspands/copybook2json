@@ -1,5 +1,5 @@
 /**
- * @file Converte Book para JSON.
+ * @file Transformar COPYBOOK (COBOL) em JSON.
  * @author @douglaspands
  * @since 2017-10-25
  */
@@ -25,8 +25,8 @@ console.log('Execução concluida!')
 console.timeEnd('Tempo gasto');
 /**
  * Gera Lista de linhas, com listas de parametros.
- * @param {string} copybook Book Cobol.
- * @return {array} Lista de listas de parametros do copybook.
+ * @param {string} copybook COPYBOOK COBOL.
+ * @return {array} Lista de listas de parametros do COPYBOOK.
  */
 function book2lista(copybook) {
     var linhasBook = (_
@@ -64,8 +64,8 @@ function book2lista(copybook) {
     return retorno;
 }
 /**
- * Converte o book em json.
- * @param {array} book Representa o book transformado em array.
+ * Converter o COPYBOOK em JSON.
+ * @param {array} book Representa o COPYBOOK transformado em array.
  * @param {number} point Ponteiro de onde sera iniciado a contagem.
  * @returns {array} Retorna lista de campos no formato de JSON.
  */
@@ -174,8 +174,8 @@ function copybook2json(book, point) {
     return { data: retorno, start: startPoint, length: lastPosition };
 };
 /**
- * Calcula o tamanho da variavel dentro do book.
- * @param {string} pic PIC do copybook.
+ * Calcula o tamanho da variavel dentro do COPYBOOK.
+ * @param {string} pic PIC do COPYBOOK.
  * @param {string} type Tipo do PIC (COMP, COMP-3, etc...)
  * @return {number} Retorna o tamanho da variavel.
  */
@@ -201,9 +201,9 @@ function picture(pic, type) {
 };
 /**
  * Verificar tipagem da variavel.
- * @param {string} pic PIC do copybook.
+ * @param {string} pic PIC do COPYBOOK.
  * @param {string} type Tipo do PIC (COMP, COMP-3, etc...)
- * @return {string} Retorna o tamanho da variavel.
+ * @return {string} Retorna o tipo da variavel.
  */
 function getType(pic, type) {
     if (_.includes(['COMP', 'COMP-3'], type)) {
@@ -216,8 +216,8 @@ function getType(pic, type) {
 };
 /**
  * Pesquisa de variavel com o mesmo nome.
- * @param {object} objectCopybook Objeto que representa o copybook.
- * @param {string} fieldNameMainframe Nome da variavel de mainframe.
+ * @param {object} objectCopybook Objeto que representa o COPYBOOK.
+ * @param {string} fieldNameMainframe Nome da variavel no COPYBOOK.
  * @return {number} Retorna a posição inicial da variavel.
  */
 function redefines(objectCopybook, fieldNameMainframe) {
