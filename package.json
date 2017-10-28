@@ -1,7 +1,7 @@
 {
   "name": "copybook-2-json",
-  "version": "3.2.1",
-  "description": "Transformar copybook em json.",
+  "version": "3.3.0",
+  "description": "Transformar COPYBOOK (COBOL) em JSON.",
   "private": true,
   "scripts": {
     "start": "node ./app.js"
