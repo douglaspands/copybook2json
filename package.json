@@ -1,0 +1,14 @@
+{
+  "name": "copybook-2-json",
+  "version": "3.2.1",
+  "description": "Transformar copybook em json.",
+  "private": true,
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "author": "@douglaspands",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "3.9.3"
+  }
+}
