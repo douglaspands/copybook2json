@@ -1,15 +1,13 @@
 # copybook2json
-Transformar COPYBOOK (COBOL) em JSON.
+Transform COPYBOOK (COBOL) to JSON.
 
-## Requisitos
-* Node.js versão >= 0.10.33.
+## Adapted as Module from Original
+* Forked from 'douglaspands/copybook2json'
 
-## Instruções
-Executar apenas na primeira vez a instalação dos pacotes necessarios:
-1. Acessar a pasta "src";
-2. Executar o comando: "npm install".  
+## Requisites
+* Node.js version >= 8.11.0
 
-Após instalação dos pacotes, executar os comandos abaixo:
-1. Colocar o COPYBOOK (com qualquer extensão) na pasta "src/input";
-2. Executar: "npm start" (na pasta "src");
-3. Arquivo *.json gerado vai estar na pasta "src/output".
+## Instructions
+1. Install as "npm install"
+2. Execute as "node src/indes.js"
+

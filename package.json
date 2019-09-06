@@ -1,14 +1,17 @@
 {
   "name": "copybook-2-json",
-  "version": "3.3.0",
-  "description": "Transformar COPYBOOK (COBOL) em JSON.",
+  "version": "3.3.1",
+  "description": "Transform COPYBOOK (COBOL) to JSON.",
   "private": true,
   "scripts": {
-    "start": "node ./app.js"
+    "start": "src/index.js"
   },
   "author": "@douglaspands",
   "license": "ISC",
   "dependencies": {
     "lodash": "3.9.3"
+  },
+  "engines": {
+    "node": "8.11.1"
   }
 }
