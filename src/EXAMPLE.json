@@ -1,0 +1,106 @@
+[
+    {
+        "name": "wi_mc_result",
+        "copybook_name": "WI_MC_RESULT",
+        "type": "group",
+        "data": [
+            {
+                "name": "wi_mc_result_provider",
+                "copybook_name": "WI_MC_RESULT_PROVIDER",
+                "type": "string",
+                "start": 0,
+                "length": 12
+            },
+            {
+                "name": "wi_mc_result_state",
+                "copybook_name": "WI_MC_RESULT_STATE",
+                "type": "string",
+                "start": 12,
+                "length": 4
+            },
+            {
+                "name": "wi_mc_result_code",
+                "copybook_name": "WI_MC_RESULT_CODE",
+                "type": "string",
+                "start": 16,
+                "length": 4
+            },
+            {
+                "name": "wi_mc_result_description",
+                "copybook_name": "WI_MC_RESULT_DESCRIPTION",
+                "type": "string",
+                "start": 20,
+                "length": 512
+            },
+            {
+                "name": "wi_mc_result_type",
+                "copybook_name": "WI_MC_RESULT_TYPE",
+                "type": "string",
+                "start": 532,
+                "length": 16
+            },
+            {
+                "name": "wi_mc_result_operation",
+                "copybook_name": "WI_MC_RESULT_OPERATION",
+                "type": "string",
+                "start": 548,
+                "length": 24
+            },
+            {
+                "name": "wi_mc_result_addons",
+                "copybook_name": "WI_MC_RESULT_ADDONS",
+                "type": "group",
+                "data": [
+                    {
+                        "name": "wi_mc_addon_count",
+                        "copybook_name": "WI_MC_ADDON_COUNT",
+                        "type": "number",
+                        "start": 572,
+                        "length": 1
+                    },
+                    {
+                        "name": "wi_mc_addon_value",
+                        "copybook_name": "WI_MC_ADDON_VALUE",
+                        "type": "binary",
+                        "start": 573,
+                        "length": 3
+                    },
+                    {
+                        "name": "wi_mc_addon_group",
+                        "copybook_name": "WI_MC_ADDON_GROUP",
+                        "type": "group",
+                        "data": [
+                            {
+                                "name": "wi_mc_group_size",
+                                "copybook_name": "WI_MC_GROUP_SIZE",
+                                "type": "number",
+                                "start": 576,
+                                "length": 1
+                            },
+                            {
+                                "name": "wi_mc_group_token",
+                                "copybook_name": "WI_MC_GROUP_TOKEN",
+                                "type": "string",
+                                "start": 577,
+                                "length": 64
+                            }
+                        ],
+                        "start": 576,
+                        "length": 640
+                    }
+                ],
+                "start": 572,
+                "length": 640
+            },
+            {
+                "name": "wi_mc_end",
+                "copybook_name": "WI_MC_END",
+                "type": "string",
+                "start": 641,
+                "length": 1
+            }
+        ],
+        "start": 0,
+        "length": 641
+    }
+]
