@@ -9,6 +9,6 @@
   "author": "@douglaspands",
   "license": "ISC",
   "dependencies": {
-    "lodash": "3.9.3"
+    "lodash": "4.17.19"
   }
 }
